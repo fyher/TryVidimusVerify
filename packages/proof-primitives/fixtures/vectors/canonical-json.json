@@ -1,0 +1,63 @@
+[
+  {
+    "input": {
+      "b": 1,
+      "a": 2
+    },
+    "expected": "{\"a\":2,\"b\":1}"
+  },
+  {
+    "input": {
+      "z": [3, 2, 1],
+      "a": {
+        "y": null,
+        "x": true
+      }
+    },
+    "expected": "{\"a\":{\"x\":true,\"y\":null},\"z\":[3,2,1]}"
+  },
+  {
+    "input": [
+      1,
+      "two",
+      {
+        "c": 3,
+        "b": 2
+      }
+    ],
+    "expected": "[1,\"two\",{\"b\":2,\"c\":3}]"
+  },
+  {
+    "input": "text",
+    "expected": "\"text\""
+  },
+  {
+    "input": 42,
+    "expected": "42"
+  },
+  {
+    "input": null,
+    "expected": "null"
+  },
+  {
+    "input": {
+      "unicode": "é日本",
+      "nested": {
+        "b": {
+          "d": 1,
+          "c": 2
+        },
+        "a": []
+      }
+    },
+    "expected": "{\"nested\":{\"a\":[],\"b\":{\"c\":2,\"d\":1}},\"unicode\":\"é日本\"}"
+  },
+  {
+    "input": {
+      "date": {
+        "toJSON": "not-a-function"
+      }
+    },
+    "expected": "{\"date\":{\"toJSON\":\"not-a-function\"}}"
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "name": "tryvidimus-verify",
+  "private": true,
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "typecheck": "pnpm -r typecheck",
+    "lint": "pnpm -r lint",
+    "test": "pnpm -r test",
+    "build:npm": "pnpm -r build:npm",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/js": "9.39.5",
+    "eslint": "9.39.5",
+    "prettier": "^3.9.9",
+    "typescript-eslint": "^8.70.1"
+  }
+}

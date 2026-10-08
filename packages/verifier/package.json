@@ -1,0 +1,50 @@
+{
+  "name": "@repo/verifier",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Open-source verifier for tryVidimus proof bundles: checks a proof without trusting the server.",
+  "license": "MIT",
+  "type": "module",
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "scripts": {
+    "test": "vitest run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "build:npm": "rm -rf dist && tsc -p tsconfig.build.json && node -e \"require('node:fs').writeFileSync('dist/package.json', JSON.stringify({ type: 'commonjs' }) + '\\\\n')\""
+  },
+  "dependencies": {
+    "@repo/proof-primitives": "workspace:*",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.3",
+    "@vitest/coverage-v8": "^5.0.2",
+    "eslint": "9.39.5",
+    "fast-check": "^4.10.2",
+    "typescript": "~5.9.3",
+    "vitest": "^5.0.2"
+  }
+}

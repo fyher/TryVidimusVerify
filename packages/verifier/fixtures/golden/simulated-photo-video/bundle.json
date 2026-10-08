@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "proof_id": "prf_golden_simulated",
+  "organization_id": "org_golden",
+  "mode": "test",
+  "external_reference_commitment": "399a9bab9aa70215ec7d24499e03a5899072dc6842975db360ce29576b5de28c",
+  "declared_by_platform": {
+    "party": "provider",
+    "stage": "check_in"
+  },
+  "capture": {
+    "method": "hosted_live",
+    "session_id": "cps_simulated_photo_video"
+  },
+  "generator": {
+    "name": "Proof Capture",
+    "version": "golden-1"
+  },
+  "media": [
+    {
+      "media_type": "photo",
+      "mime_type": "image/jpeg",
+      "byte_size": 1311,
+      "captured_at": "2026-09-30T11:59:58.000Z",
+      "original_sha256": "ef2db72099d6e401481b021c0ae066506722504bc7c0d2e27cde3716a6221833",
+      "signed_sha256": "def5f08422c8ce724f9c3a84cc08a70d6a0816f38859090461a7812f78bfa6c4",
+      "manifest_id": "e20057b3-fe1f-43bb-9824-7eef66287ea2",
+      "key_version": "test-identity"
+    },
+    {
+      "media_type": "video",
+      "mime_type": "video/mp4",
+      "byte_size": 2196,
+      "captured_at": "2026-09-30T11:59:58.000Z",
+      "original_sha256": "d53669e5e269fc0c7da7286bad7266fc288c32443eb0d3705dc6606ce27ba9ab",
+      "signed_sha256": "01b85ba9e14a17bbbafd0a953ce4af30401c13778d9dc9952b7c4faf7cb98fab",
+      "manifest_id": "3832ff55-e8f5-47cf-870d-800742a57bfd",
+      "key_version": "test-identity"
+    }
+  ],
+  "manifest_sha256": "354a2e2c773daadfd159ca12bba4d45ca7d3bc0bd29cf3921fd4295ca3b47009",
+  "batch": {
+    "merkle_root": "b7fe5e6754bc52a8f551c508a5cd14d0e597f7fc5540ddca2bd5a28be1b0d730",
+    "leaf_index": 2,
+    "merkle_path": [
+      {
+        "hash": "c59bda4e68f339a26bb5d13eb5163ff0d82d624f2bfd80966e58e2502977f36e",
+        "position": "right"
+      },
+      {
+        "hash": "bdf7a8ed320fee969592ce696334c34d451dbf9711c8f74796984e8dd75612e9",
+        "position": "left"
+      },
+      {
+        "hash": "c3357b2bd61217326056246bff2f8a744a28d9b78fd86ff0a9aaefc3ed8348a9",
+        "position": "right"
+      }
+    ],
+    "tsr_base64": "MIIFfjADAgEAMIIFdQYJKoZIhvcNAQcCoIIFZjCCBWICAQMxDzANBglghkgBZQMEAgEFADBzBgsqhkiG9w0BCRABBKBkBGIwYAIBAQYKKwYBBAGGjR8BATAxMA0GCWCGSAFlAwQCAQUABCDrS2o/zbRm6q8xuqg1pRBkGRG2QLvJmjxuuTmj3l81OwIBZRgPMjAyNjA5MzAxMjAwMDBaAggzeInd1ALif6CCA3owggG6MIIBYaADAgECAgECMAoGCCqGSM49BAMCMFsxWTAJBgNVBAYMAkZSMCsGA1UECgwkU2ltdWxhdGVkIFRpbWVzdGFtcCBBdXRob3JpdHkgKFRFU1QpMB8GA1UEAwwYU2ltdWxhdGVkIFJvb3QgQ0EgKFRFU1QpMB4XDTI2MDkyOTEyMDAwMFoXDTM2MDkyNzEyMDAwMFowVzFVMAkGA1UEBgwCRlIwKwYDVQQKDCRTaW11bGF0ZWQgVGltZXN0YW1wIEF1dGhvcml0eSAoVEVTVCkwGwYDVQQDDBRTaW11bGF0ZWQgVFNBIChURVNUKTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABHODFdHKdpYt66ONhOSHrg3AEZigc7MAtFNpsl2bT04qxpJVrSrd6763B4WEW3mowu46I237794M2SRcA8JxH06jGjAYMBYGA1UdJQEB/wQMMAoGCCsGAQUFBwMIMAoGCCqGSM49BAMCA0cAMEQCIB9xTsFFcP5XW74fwVQnOFkmhVd3qtcExZvcb3tioIS/AiBXtoiyx7RnWkvb+D0arhM/gpDaqWFWk9Tzutk0HQ4F3jCCAbgwggFeoAMCAQICAQEwCgYIKoZIzj0EAwIwWzFZMAkGA1UEBgwCRlIwKwYDVQQKDCRTaW11bGF0ZWQgVGltZXN0YW1wIEF1dGhvcml0eSAoVEVTVCkwHwYDVQQDDBhTaW11bGF0ZWQgUm9vdCBDQSAoVEVTVCkwHhcNMjYwOTI5MTIwMDAwWhcNMzYwOTI3MTIwMDAwWjBbMVkwCQYDVQQGDAJGUjArBgNVBAoMJFNpbXVsYXRlZCBUaW1lc3RhbXAgQXV0aG9yaXR5IChURVNUKTAfBgNVBAMMGFNpbXVsYXRlZCBSb290IENBIChURVNUKTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABG91wRMAki/X2MCvoO6JrnoA7HAUBqwxJvREkRpf4P4GbpZDGBmNZgAQRiUFYxyyPdxGR/xrnwuK9xu5ODlVZmqjEzARMA8GA1UdEwEB/wQFMAMBAf8wCgYIKoZIzj0EAwIDSAAwRQIhAMRU7CifB8OoqkoXlc3j8jCPR873UoKnvWT8PxBiOrfbAiBx/dHDRsWNAeWB2kOzukJxnFZHUAQXrK3wDdlLUcoYDDGCAVcwggFTAgEBMGAwWzFZMAkGA1UEBgwCRlIwKwYDVQQKDCRTaW11bGF0ZWQgVGltZXN0YW1wIEF1dGhvcml0eSAoVEVTVCkwHwYDVQQDDBhTaW11bGF0ZWQgUm9vdCBDQSAoVEVTVCkCAQIwDQYJYIZIAWUDBAIBBQCggYYwGgYJKoZIhvcNAQkDMQ0GCyqGSIb3DQEJEAEEMC8GCSqGSIb3DQEJBDEiBCC30qSrzMcCzNsDetNGB2OYVEUIP6zTKie6NYJJK+jioDA3BgsqhkiG9w0BCRACLzEoMCYwJDAiBCA4dLsb+TFHpjgr2tTN97LeQykc0EvKJ8CvIe4S1Q9HlTAKBggqhkjOPQQDAgRIMEYCIQCGtzqT/lTJ2WXZdZ7ce3DMU9IwliB2ArXyeTHHQqIzzAIhANRbyHjNHhyFhgQUmdL+pQhHGMSkm2wu02R4e3WCOaf8",
+    "authority": "simulated",
+    "gen_time": "2026-09-30T12:00:00.000Z",
+    "serial": "65",
+    "policy_oid": "1.3.6.1.4.1.99999.1.1",
+    "qualified": false
+  }
+}
